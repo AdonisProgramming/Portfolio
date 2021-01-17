@@ -1,94 +1,136 @@
-
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-    "empty-left profile profile empty-right"
-    "dev dev dev dev"
-    "des des des des"
-    "des-projs des-projs des-projs des-projs";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0 0;
+  grid-template-areas: "empty-left profile profile empty-right" "dev dev dev dev" "des des des des" "des-projs des-projs des-projs des-projs";
 }
 
 .dev {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-    "dev-description dev-description dev-description"
-    "dev-projs dev-projs dev-projs";
-    grid-area: dev;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0 0;
+  grid-template-areas: "dev-description dev-description dev-description" "dev-projs dev-projs dev-projs";
+  grid-area: dev;
 }
 
-.empty-left { grid-area: empty-left; }
+.empty-left {
+  grid-area: empty-left;
+}
 
-.profile { grid-area: profile; }
+.profile {
+  grid-area: profile;
+}
 
-.empty-right { grid-area: empty-right; }
+.empty-right {
+  grid-area: empty-right;
+}
 
-.dev { grid-area: dev; }
+.dev {
+  grid-area: dev;
+}
 
-.dev-description { grid-area: dev-description; }
+.dev-description {
+  grid-area: dev-description;
+}
 
-.dev-projs { grid-area: dev-projs; }
+.dev-projs {
+  grid-area: dev-projs;
+}
 
-.des { grid-area: des-card; }
+.des {
+  grid-area: des-card;
+}
 
-.des-projs { grid-area: des-projs; }
+.des-projs {
+  grid-area: des-projs;
+}
+$cyan-color: rgb(0,196,164);
 
 
-#profile-pic{
+
+#title-card {
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 2rem 0.8rem;
+  width: auto;
+  max-width: 100%;
+  color: white;
+  background: rgba(36,40,42,.9);
+  font-family: 'Spartan', sans-serif;
+  font-size: 2.410vw;
+
+  #profile-pic {
     max-width: 100%;
     height: auto;
+  }
 
-}
+  hr {
+    width: 90%;
+  }
 
-
-#title-card{
-    border-radius: 10px;
-    position: relative;
-    text-align: center;
-    padding: 30px 20px;
-    margin: .8rem;
-    width: auto;
-    max-width: 100%;
-    color: white;
-    background: rgb(36,40,42,.9);
-    font-family: 'Spartan', sans-serif;
-    font-size: 2.410vw;
-}
-
-#title-card hr{
-    width: 70%;
-}
-
-#github{
+  #github {
     padding-right: 10px;
+  }
 
-}
-
-#linkedin{
+  #linkedin {
     padding-right: 10px;
+  }
 }
 
-#dev-title{
-    display: block;
-    position: relative;
-    text-align: center;
-    border-radius: 10px;
-    padding: 10px;
-    margin: .8rem auto;
-    width: auto;
-    max-width: 50%;
-    color: white;
-    background: rgb(36,40,42,.9);
-    font-family: 'Spartan', sans-serif;
-    font-size: 2.410vw;
+#dev-title {
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0.8rem auto;
+  width: auto;
+  max-width: 50%;
+  color: white;
+  background: rgba(36,40,42,.9);
+  font-family: 'Spartan', sans-serif;
+  font-size: 2.410vw;
 }
 
+#proj-container {
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0.25rem auto;
+  width: auto;
+  max-width: 75%;
+  color: white;
+  background: rgba(36,40,42,.9);
+  font-family: 'Spartan', sans-serif;
+  font-size: 2.410vw;
+
+  #proj-title {
+    color: $cyan-color;
+    font-size: 3.5vw;
+    margin-bottom: 0;
+  }
+
+  #proj-description {
+    padding-bottom: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $cyan-color;
+    background-color: rgb(20, 20, 20);
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  a:hover {
+    background-color: black;
+  }
+}
