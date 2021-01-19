@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="index.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <title>Adonis Muminovic</title>
+  <title>Adonis Muminovic Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
@@ -15,40 +16,88 @@
 <body>
 
   <div class="grid-container">
-    <div class="empty-left" style="background-color: lightblue"></div>
-    <div class="profile" style="background-color: lightblue">
-      <div id="title-card">
-        <img id="profile-pic" src="resources/profile-pic.png" alt="">
-        <h1>Adonis Muminovic</h1>
-        <p>Developer & Designer</p>
-        <hr>
-        <br>
-        <a href="https://github.com/AdonisProgramming" target="_blank"><img id="github" src="resources/github.png" width="32px" height="32px"></a>
-        <a href="https://www.linkedin.com/in/adonis-muminovic-220422152/" target="_blank"><img id="linkedin" src="resources/linkedin-color.png" width="32px" height="32px"></a>
-        <a href="contact.html"><img src="resources/mail.png" width="32px" height="32px"></a>
-      </div>
-    </div>
-    <div class="empty-right" style="background-color: lightblue"></div>
-    <div class="dev" style="background-color: lightyellow">
-      <div class="dev-description">
-        <h1 id="dev-title">Development Projects</h1>
-        <div id="proj-container">
-          <h3 id="proj-title">The Mazda Miata</h3>
+    <div class="profile">
+        <div id="title-card">
+          <img id="profile-pic" src="resources/profile-pic.png" alt="">
+          <h1>Adonis Muminovic</h1>
+          <p>Developer & Designer</p>
           <hr>
-          <p id="proj-description">A tribute site to the creation and development of the renowed roadster, the Mazda Miata.</p>
-          <a href="https://github.com/AdonisProgramming/Mazda-Miata-Tribute-Page/tree/main">Source Code</a>
-          <div id="img-center">
-            <img src="resources/miata-site-crop.png" alt="">
+          <div id="icons">
+            <a href="https://github.com/AdonisProgramming" target="_blank"><img id="github" src="resources/github.png"></a>
+            <a href="https://www.linkedin.com/in/adonis-muminovic-220422152/" target="_blank"><img id="linkedin" src="resources/linkedin-color.png"></a>
+            <a href="contact.html"><img id="mail" src="resources/mail.png"></a>
           </div>
         </div>
+    </div>
+    <div class="dev" style="background-color: rgb(99,133,194">
+      <div class="dev-projs">
+        <h1 class="title">Development Projects</h1>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div id="proj-container">
+                <h3 id="proj-title">Star Wars Iconic Quotes</h3>
+                <hr>
+                <p id="proj-description">A Star Wars quote machine that acts out iconic dialogue from a galaxy far far away...</p>
+                <a href="">Source Code</a>
+                <div id="img-center">
+                  <img src="resources/placeholder.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="proj-container">
+                <h3 id="proj-title">The Mazda Miata</h3>
+                <hr>
+                <p id="proj-description">A tribute site to the creation and development of the renowed roadster, the Mazda Miata.</p>
+                <a href="https://github.com/AdonisProgramming/Mazda-Miata-Tribute-Page">Source Code</a>
+                <div id="img-center">
+                  <img src="resources/miata-site-crop.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="proj-container">
+                <h3 id="proj-title">Imperial Benefits Form</h3>
+                <hr>
+                <p id="proj-description">Even the Empire needs its Stormtroopers to fill out yearly forms...</p>
+                <a href="https://github.com/AdonisProgramming/Survey-Form-Page">Source Code</a>
+                <div id="img-center">
+                  <img src="resources/imperial-form-crop.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <!-- dev closing div -->
+    </div>
+
+    <div class="des" style="background-color: lightgreen">
+      <div class="des-projs">
+        <h1 class="title">Design Projects</h1>
       </div>
     </div>
 
-    <div class="des"></div>
 
-
-
-
+    <!-- Bootstrap required scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- End of Above -->
 </body>
 
 
