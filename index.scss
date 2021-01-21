@@ -1,13 +1,12 @@
 body {
-  background-color: black;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto;
   gap: 0 0;
-  grid-template-areas: "profile profile profile profile" "dev dev dev dev" "des des des des";
+  grid-template-areas: "nav nav nav nav" "profile profile profile profile" "dev dev dev dev" "des des des des";
 }
 
 .dev {
@@ -26,6 +25,10 @@ body {
   gap: 0 0;
   grid-template-areas: "des-projs des-projs des-projs";
   grid-area: dev;
+}
+
+.nav {
+  grid-area: nav;
 }
 
 .empty-left {
@@ -55,6 +58,7 @@ body {
 .des-projs {
   grid-area: des-projs;
 }
+
 $cyan-color: rgb(0,196,164);
 
 .profile {
@@ -63,140 +67,170 @@ $cyan-color: rgb(0,196,164);
   background-image: url("resources/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 
-#title-card {
-  border-radius: 10px;
-  position: relative;
-  text-align: center;
-  padding: 30px 20px;
-  margin: 2rem auto; //2rem 0.8rem;
-  max-width: 80%;
-  width: auto;
-  background: rgba(36,40,42,.9);
-
-  #profile-pic {
-    max-width: 100%;
-    height: auto;
-  }
-
-  h1 {
-    font-family: 'Spartan', sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-    padding-top: 20px;
-    height: auto;
-    max-width: 100%;
-    color: white;
-  }
-
-  p {
-    font-family: 'Spartan', sans-serif;
-    font-size: 0.70rem;
-    font-weight: 300;
-    color: white;
-  }
-
-  hr {
-    display: block;
-    height: 10px;
-    border: 0;
-    border-top: 1px solid white;
-    margin: 1em 0;
-    padding: 0;
-  }
-
-  #icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
-
-  #github {
-    padding-right: 15px;
-    height: auto;
-    max-width: 100%;
-  }
-
-  #linkedin {
-    padding-right: 15px;
-    height: auto;
-    max-width: 100%;
-  }
-
-  #mail {
-    padding-right: 10px;
-    height: auto;
-    max-width: 100%;
-  }
+.nav  {
+  background-color: rgb(30, 30, 30);
 }
 
-.title {
-  position: relative;
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 0.8rem auto;
-  width: auto;
-  max-width: 50%;
-  color: white;
-  background: rgba(36,40,42,.9);
-  font-family: 'Spartan', sans-serif;
-  font-size: 2.410vw;
-}
-
-#proj-container {
-  position: relative;
-  text-align: center;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 0.25rem auto 1rem;
-  width: auto;
-  max-width: 75%;
-  color: white;
-  background: rgba(36,40,42,.9);
-  font-family: 'Spartan', sans-serif;
-  font-size: 2.410vw;
-
-  #proj-title {
-    color: $cyan-color;
-    font-size: 3.5vw;
-    margin-bottom: 0;
-  }
-
-  hr {
-    display: block;
-    height: 10px;
-    border: 0;
-    border-top: 1px solid white;
-    margin: 1em 0;
-    padding: 0;
-  }
-
-  #proj-description {
-    padding-bottom: 10px;
-  }
-
-  a {
-    text-decoration: none;
-    color: $cyan-color;
-    background-color: rgb(40, 40, 40);
-    padding: 8px;
-    border-radius: 8px;
-  }
-
-  a:hover {
-    background-color: black;
-  }
-
-  img {
-    height: auto;
-    align-self: center;
-    max-width: 90%;
-    padding: 0.40rem;
-    margin-top: 1rem;
-    background-color: rgb(40, 40, 40);
+#navbar{
+    list-style-type: none;
+    text-align: center;
+    font-size: 1rem;
+    padding: .25rem;
     border-radius: 10px;
+    max-width: 100%;
+    background-color: rgb(30, 30, 30);
+
+
+    a {
+      text-decoration: none;
+      color: $cyan-color;
+      border-radius: 5px;
+      padding: 0 .75rem ;
+    }
+
+    a:hover {
+      text-decoration: none;
+      background-color: $cyan-color;
+      color: black;
+    }
+
   }
-}
+
+  #title-card {
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 3.5rem auto 2rem; //2rem 0.8rem;
+    max-width: 80%;
+    width: auto;
+    background: rgba(36,40,42,.9);
+
+    #profile-pic {
+      max-width: 100%;
+      height: auto;
+    }
+
+    h1 {
+      font-family: 'Spartan', sans-serif;
+      font-size: 2rem;
+      font-weight: 600;
+      padding-top: 20px;
+      height: auto;
+      max-width: 100%;
+      color: white;
+    }
+
+    p {
+      font-family: 'Spartan', sans-serif;
+      font-size: 0.70rem;
+      font-weight: 300;
+      color: white;
+    }
+
+    hr {
+      display: block;
+      height: 10px;
+      border: 0;
+      border-top: 1px solid white;
+      margin: 1em 0;
+      padding: 0;
+    }
+
+    #icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+
+    #github {
+      padding-right: 15px;
+      height: auto;
+      max-width: 100%;
+    }
+
+    #linkedin {
+      padding-right: 15px;
+      height: auto;
+      max-width: 100%;
+    }
+
+    #mail {
+      padding-right: 10px;
+      height: auto;
+      max-width: 100%;
+    }
+  }
+
+  .title {
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0.8rem auto;
+    width: auto;
+    max-width: 50%;
+    color: white;
+    background: rgba(36,40,42,.9);
+    font-family: 'Spartan', sans-serif;
+    font-size: 2.410vw;
+  }
+
+  #proj-container {
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0.25rem auto 1rem;
+    width: auto;
+    max-width: 75%;
+    color: white;
+    background: rgba(36,40,42,.9);
+    font-family: 'Spartan', sans-serif;
+    font-size: 2.410vw;
+
+    #proj-title {
+      color: $cyan-color;
+      font-size: 3.5vw;
+      margin-bottom: 0;
+    }
+
+    hr {
+      display: block;
+      height: 10px;
+      border: 0;
+      border-top: 1px solid white;
+      margin: 1em 0;
+      padding: 0;
+    }
+
+    #proj-description {
+      padding-bottom: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $cyan-color;
+      background-color: rgb(40, 40, 40);
+      padding: 8px;
+      border-radius: 8px;
+    }
+
+    a:hover {
+      background-color: black;
+    }
+
+    img {
+      height: auto;
+      align-self: center;
+      max-width: 90%;
+      padding: 0.40rem;
+      margin-top: 1rem;
+      background-color: rgb(40, 40, 40);
+      border-radius: 10px;
+    }
+  }
