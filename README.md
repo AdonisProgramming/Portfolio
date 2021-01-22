@@ -5,7 +5,7 @@ TODO:
 
 - ~~add section backgrounds~~
 - large image preview for design
-- ~~netlify link for dev projs ~~
+- ~~netlify link for dev projs~~
 - view for attractiveness proj
 - desktop media query for better view
 - footer
