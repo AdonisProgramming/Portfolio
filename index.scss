@@ -45,6 +45,9 @@ body {
 
 .dev {
   grid-area: dev;
+  background-image: url("resources/dev-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .dev-projs {
@@ -53,6 +56,9 @@ body {
 
 .des {
   grid-area: des;
+  background-image: url("resources/des-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .des-projs {
@@ -93,8 +99,8 @@ $cyan-color: rgb(0,196,164);
 
     a:hover {
       text-decoration: none;
-      background-color: $cyan-color;
-      color: black;
+      border-top: 1px solid $cyan-color;
+      border-bottom: 1px solid $cyan-color;
     }
 
   }
@@ -107,7 +113,7 @@ $cyan-color: rgb(0,196,164);
     margin: 3.5rem auto 2rem; //2rem 0.8rem;
     max-width: 80%;
     width: auto;
-    background: rgba(36,40,42,.9);
+    background: rgba(36,40,42,.98);
 
     #profile-pic {
       max-width: 100%;
@@ -180,6 +186,13 @@ $cyan-color: rgb(0,196,164);
     font-size: 2.410vw;
   }
 
+  .links{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
   #proj-container {
     position: relative;
     text-align: center;
@@ -189,7 +202,7 @@ $cyan-color: rgb(0,196,164);
     width: auto;
     max-width: 75%;
     color: white;
-    background: rgba(36,40,42,.9);
+    background: rgba(36,40,42,.97);
     font-family: 'Spartan', sans-serif;
     font-size: 2.410vw;
 
@@ -210,18 +223,21 @@ $cyan-color: rgb(0,196,164);
 
     #proj-description {
       padding-bottom: 10px;
+      margin-bottom: 0;
     }
 
     a {
       text-decoration: none;
       color: $cyan-color;
-      background-color: rgb(40, 40, 40);
+      background-color: rgb(30, 30, 30);
       padding: 8px;
+      margin: 8px auto 0;
       border-radius: 8px;
     }
 
     a:hover {
-      background-color: black;
+      color: black;
+      background-color: $cyan-color;
     }
 
     img {
@@ -229,7 +245,7 @@ $cyan-color: rgb(0,196,164);
       align-self: center;
       max-width: 90%;
       padding: 0.40rem;
-      margin-top: 1rem;
+      margin-top: .5rem;
       background-color: rgb(40, 40, 40);
       border-radius: 10px;
     }
