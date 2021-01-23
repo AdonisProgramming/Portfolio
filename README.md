@@ -3,12 +3,14 @@
 
 TODO:
 
+
+
 - ~~add section backgrounds~~
 - ~~large image preview for design~~
 - ~~netlify link for dev projs~~
 - ~~view for attractiveness proj~~
 - ~~resume page~~
 - ~~contact page~~
-- desktop media query for better view
+- ~~desktop media query for better view~~
 
 
