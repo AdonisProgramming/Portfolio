@@ -1,5 +1,4 @@
-body {
-}
+body {}
 
 .grid-container {
   display: grid;
@@ -24,7 +23,7 @@ body {
   grid-template-rows: auto auto;
   gap: 0 0;
   grid-template-areas: "des-projs des-projs des-projs";
-  grid-area: dev;
+  grid-area: des;
 }
 
 .nav {
@@ -51,7 +50,7 @@ body {
 }
 
 .dev-projs {
-  grid-area: dev-description;
+  grid-area: dev-projs;
 }
 
 .des {
@@ -64,7 +63,6 @@ body {
 .des-projs {
   grid-area: des-projs;
 }
-
 $cyan-color: rgb(0,196,164);
 
 .profile {
@@ -73,180 +71,450 @@ $cyan-color: rgb(0,196,164);
   background-image: url("resources/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
-.nav  {
+.nav {
   background-color: rgb(30, 30, 30);
 }
 
-#navbar{
-    list-style-type: none;
-    text-align: center;
-    font-size: 1rem;
-    padding: .25rem;
-    border-radius: 10px;
-    max-width: 100%;
-    background-color: rgb(30, 30, 30);
+#navbar {
+  list-style-type: none;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 10px;
+  max-width: 100%;
+  background-color: rgb(30, 30, 30);
 
-
-    a {
-      text-decoration: none;
-      color: $cyan-color;
-      border-radius: 5px;
-      padding: 0 .75rem ;
-    }
-
-    a:hover {
-      text-decoration: none;
-      border-top: 1px solid $cyan-color;
-      border-bottom: 1px solid $cyan-color;
-    }
-
+  a {
+    text-decoration: none;
+    color: $cyan-color;
+    border-radius: 5px;
+    padding: 0 0.75rem;
   }
 
-  #title-card {
+  a:hover {
+    text-decoration: none;
+    border-top: 1px solid $cyan-color;
+    border-bottom: 1px solid $cyan-color;
+  }
+}
+
+#title-card {
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 3.5rem auto 2rem; //2rem 0.8rem;
+  max-width: 70%;
+  width: auto;
+  background: rgba(36,40,42,.98);
+
+  #profile-pic {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-family: 'Spartan', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 20px;
+    height: auto;
+    max-width: 100%;
+    color: white;
+  }
+
+  p {
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.70rem;
+    font-weight: 300;
+    color: white;
+  }
+
+  hr {
+    display: block;
+    height: 10px;
+    border: 0;
+    border-top: 1px solid white;
+    margin: 1em 0;
+    padding: 0;
+  }
+
+  #icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  #github {
+    padding-right: 15px;
+    height: auto;
+    max-width: 100%;
+  }
+
+  #linkedin {
+    padding-right: 15px;
+    height: auto;
+    max-width: 100%;
+  }
+
+  #mail {
+    padding-right: 10px;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0.9rem auto 0.8rem;
+  width: auto;
+  max-width: 50%;
+  color: white;
+  background: rgba(36,40,42,.9);
+  font-family: 'Spartan', sans-serif;
+  font-size: 2.410vw;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.proj-container {
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0.25rem auto 0.8rem;
+  width: auto;
+  max-width: 75%;
+  color: white;
+  background: rgba(36,40,42,.97);
+  font-family: 'Spartan', sans-serif;
+  font-size: 2.410vw;
+
+  #proj-title {
+    color: $cyan-color;
+    font-size: 3.5vw;
+    margin-bottom: 0;
+  }
+
+  hr {
+    display: block;
+    height: 10px;
+    border: 0;
+    border-top: 1px solid white;
+    margin: 1em 0;
+    padding: 0;
+  }
+
+  #proj-description {
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: $cyan-color;
+    background-color: rgb(30, 30, 30);
+    padding: 8px;
+    margin: 10px auto 0;
+    border-radius: 8px;
+  }
+
+  a:hover {
+    color: black;
+    background-color: $cyan-color;
+  }
+
+  img {
+    height: auto;
+    align-self: center;
+    max-width: 90%;
+    padding: 0.40rem;
+    margin-top: 0.5rem;
+    background-color: rgb(40, 40, 40);
     border-radius: 10px;
-    position: relative;
-    text-align: center;
-    padding: 30px 20px;
-    margin: 3.5rem auto 2rem; //2rem 0.8rem;
-    max-width: 80%;
-    width: auto;
-    background: rgba(36,40,42,.98);
-
-    #profile-pic {
-      max-width: 100%;
-      height: auto;
-    }
-
-    h1 {
-      font-family: 'Spartan', sans-serif;
-      font-size: 2rem;
-      font-weight: 600;
-      padding-top: 20px;
-      height: auto;
-      max-width: 100%;
-      color: white;
-    }
-
-    p {
-      font-family: 'Spartan', sans-serif;
-      font-size: 0.70rem;
-      font-weight: 300;
-      color: white;
-    }
-
-    hr {
-      display: block;
-      height: 10px;
-      border: 0;
-      border-top: 1px solid white;
-      margin: 1em 0;
-      padding: 0;
-    }
-
-    #icons {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: auto;
-    }
-
-    #github {
-      padding-right: 15px;
-      height: auto;
-      max-width: 100%;
-    }
-
-    #linkedin {
-      padding-right: 15px;
-      height: auto;
-      max-width: 100%;
-    }
-
-    #mail {
-      padding-right: 10px;
-      height: auto;
-      max-width: 100%;
+  }
+}
+// Phone Small
+@media screen and (min-width: 320px) {
+  #navbar {
+    a {
+      padding: 0 0.23rem !important;
     }
   }
 
   .title {
-    position: relative;
-    text-align: center;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 0.8rem auto;
-    width: auto;
-    max-width: 50%;
-    color: white;
-    background: rgba(36,40,42,.9);
-    font-family: 'Spartan', sans-serif;
-    font-size: 2.410vw;
+    font-size: 3.5vw;
   }
 
-  .links{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 100%;
+  #proj-title {
+    font-size: 4vw;
   }
 
-  #proj-container {
-    position: relative;
-    text-align: center;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 0.25rem auto 1rem;
-    width: auto;
-    max-width: 75%;
-    color: white;
-    background: rgba(36,40,42,.97);
-    font-family: 'Spartan', sans-serif;
-    font-size: 2.410vw;
+  #proj-description {
+    font-size: 3.5vw;
+  }
 
-    #proj-title {
-      color: $cyan-color;
+  .links {
+    a {
       font-size: 3.5vw;
-      margin-bottom: 0;
+    }
+  }
+}
+// Phone Medium
+@media screen and (min-width: 375px) {
+  #navbar {
+    a {
+      padding: 0 0.65rem;
+    }
+  }
+
+  .title {
+    font-size: 3.5vw;
+  }
+
+  #proj-title {
+    font-size: 4vw;
+  }
+
+  #proj-description {
+    font-size: 3.5vw;
+  }
+
+  .links {
+    a {
+      font-size: 3.5vw;
+    }
+  }
+}
+// Phone Large
+@media screen and (min-width: 425px) {
+  .title {
+    font-size: 3.5vw;
+  }
+
+  #proj-title {
+    font-size: 3vw;
+  }
+
+  #proj-description {
+    font-size: 2.5vw;
+  }
+
+  .links {
+    a {
+      font-size: 2vw;
+    }
+
+    .proj-container img {
+      width: 30%;
+    }
+  }
+}
+// Tablet and Laptop
+@media screen and (min-width: 1024px) {
+  .title {
+    margin: 2rem auto 0.8rem;
+  }
+
+  .des,
+  .dev {
+    padding-bottom: 1rem !important;
+  }
+
+  #title-card {
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: .8rem;
     }
 
     hr {
-      display: block;
-      height: 10px;
-      border: 0;
-      border-top: 1px solid white;
-      margin: 1em 0;
-      padding: 0;
+      margin: 1em 8rem;
+    }
+
+  }
+
+  #proj-title {
+    font-size: 3vw;
+  }
+
+  #proj-description {
+    font-size: 2.5vw;
+  }
+
+  .links {
+    a {
+      font-size: 2vw;
+    }
+
+  }
+
+  .proj-container img {
+    width: 50%;
+  }
+
+
+}
+// Large Laptop
+@media screen and(min-width: 1440px) {
+  .title {
+    margin: 2rem auto 0.8rem;
+  }
+
+  .des,
+  .dev {
+    padding-bottom: 1rem !important;
+  }
+
+  #title-card {
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    hr {
+      margin: 1em 8rem;
+    }
+
+  }
+
+  .title {
+    font-size: 2vw;
+  }
+
+  .proj-container {
+    max-width: 70%;
+
+    #proj-title {
+      font-size: 1.5vw;
+    }
+
+    hr {
+      margin: .5em 0;
     }
 
     #proj-description {
-      padding-bottom: 10px;
-      margin-bottom: 0;
+      font-size: 1vw;
     }
 
-    a {
-      text-decoration: none;
-      color: $cyan-color;
-      background-color: rgb(30, 30, 30);
-      padding: 8px;
-      margin: 8px auto 0;
-      border-radius: 8px;
+    .links {
+      a {
+        font-size: 1vw;
+        margin: 20px auto 0;
+
+      }
+
+  }
+
+
+  }
+
+  .proj-container img {
+    width: 50%;
+  }
+
+}
+// 1920 x 1080
+@media screen and(min-width: 1920px) {
+  .title {
+    margin: 3rem auto 0.8rem;
+  }
+
+  .des,
+  .dev,
+  .profile {
+    padding-bottom: 5rem !important;
+  }
+
+  #navbar {
+    font-size: 1.8rem;
+  }
+
+  #title-card {
+    max-width: 65%;
+    margin: 5rem auto 1rem;
+
+    h1 {
+      font-size: 3rem;
     }
 
-    a:hover {
-      color: black;
-      background-color: $cyan-color;
+    p {
+      font-size: 2rem;
+    }
+
+    hr {
+      margin: 1em 8rem;
+    }
+
+    #github,
+    #linkedin {
+      padding-right: 30px;
+    }
+  }
+
+  .title {
+    font-size: 2vw;
+    max-width: 40%;
+    padding: 20px;
+    margin: 3rem auto 2rem;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 100%;
+  }
+
+  .proj-container {
+    max-width: 60%;
+    padding: 20px 20px 60px;
+    margin: 0.25rem auto 0;
+    font-size: 1vw;
+
+    #proj-title {
+      padding-top: 1rem;
+      font-size: 2vw;
+    }
+
+    #proj-description {
+      margin: 0 10rem;
+    }
+
+    hr {
+      margin: 0.5em 0;
+    }
+
+    .links {
+
+      a {
+        margin: 30px 1rem 0;
+        padding: 20px;
+      }
+
     }
 
     img {
-      height: auto;
-      align-self: center;
-      max-width: 90%;
-      padding: 0.40rem;
-      margin-top: .5rem;
-      background-color: rgb(40, 40, 40);
-      border-radius: 10px;
+      margin-top: 2rem;
+      width: auto;
+      width: 40%;
     }
   }
+}
