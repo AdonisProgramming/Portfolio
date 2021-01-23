@@ -1,10 +1,10 @@
 # Portfolio
  Source code for my personal portfolio website
+ 
+ Live:
+ http://www.adonis-muminovic.com
 
 TODO:
-
-
-
 - ~~add section backgrounds~~
 - ~~large image preview for design~~
 - ~~netlify link for dev projs~~
