@@ -1,4 +1,10 @@
-body {}
+body {
+  background-image: url("resources/des-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+}
 
 .grid-container {
   display: grid;
@@ -44,9 +50,7 @@ body {}
 
 .dev {
   grid-area: dev;
-  background-image: url("resources/dev-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+
 }
 
 .dev-projs {
@@ -55,9 +59,7 @@ body {}
 
 .des {
   grid-area: des;
-  background-image: url("resources/des-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+
 }
 
 .des-projs {
@@ -68,9 +70,7 @@ $cyan-color: rgb(0,196,164);
 .profile {
   margin: 0;
   padding: 0;
-  background-image: url("resources/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+
 }
 
 .nav {
