@@ -65,7 +65,7 @@ body {
 .des-projs {
   grid-area: des-projs;
 }
-$cyan-color: rgb(0,196,164);
+$babyblue-color: rgb(27,159,198);
 
 .profile {
   margin: 0;
@@ -88,15 +88,15 @@ $cyan-color: rgb(0,196,164);
 
   a {
     text-decoration: none;
-    color: $cyan-color;
+    color: $babyblue-color;
     border-radius: 5px;
     padding: 0 0.75rem;
   }
 
   a:hover {
     text-decoration: none;
-    border-top: 1px solid $cyan-color;
-    border-bottom: 1px solid $cyan-color;
+    border-top: 1px solid $babyblue-color;
+    border-bottom: 1px solid $babyblue-color;
   }
 }
 
@@ -202,7 +202,7 @@ $cyan-color: rgb(0,196,164);
   font-size: 2.410vw;
 
   #proj-title {
-    color: $cyan-color;
+    color: $babyblue-color;
     font-size: 3.5vw;
     margin-bottom: 0;
   }
@@ -222,7 +222,7 @@ $cyan-color: rgb(0,196,164);
 
   a {
     text-decoration: none;
-    color: $cyan-color;
+    color: $babyblue-color;
     background-color: rgb(30, 30, 30);
     padding: 8px;
     margin: 10px auto 0;
@@ -231,7 +231,7 @@ $cyan-color: rgb(0,196,164);
 
   a:hover {
     color: black;
-    background-color: $cyan-color;
+    background-color: $babyblue-color;
   }
 
   img {
